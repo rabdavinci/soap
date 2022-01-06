@@ -37,7 +37,7 @@ class Wallets
       return true;
     }
     // incorrect wallet
-    return false;
+    throw new \Exception("Incorrect wallet");
   }
 
   public function PerformTransaction($params)
@@ -46,10 +46,10 @@ class Wallets
     $limit = $params['limit'];
 
     if ($amount > $limit) {
-      // return error
-      return 'error';
+      throw new \Exception("Limit reached");
+
     }
-    return 'success';
+    return true;
   }
 
   public function CheckTransaction($params)
