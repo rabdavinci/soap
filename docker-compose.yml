@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  service:
+    env_file: .env
+    build:
+      context: .
+    restart: always
+    ports:
+      - "${SERVICE_PORT}:80"
+    expose:
+      - "${SERVICE_PORT}"
