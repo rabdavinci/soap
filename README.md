@@ -16,6 +16,12 @@ git clone git@github.com:rabdavinci/...git .
 make build
 ```
 
+3. Run service
+
+```
+make run
+```
+
 ## TODO
 This is still raw project
 1. Add logger
