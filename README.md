@@ -7,7 +7,7 @@ This repo contains solutions "WALLET INCEREASE SERVICE"
 1. Clone project
 
 ```
-git clone git@github.com:rabdavinci/...git .
+git clone git@github.com:rabdavinci/soap.git .
 ```
 
 2. Build service
